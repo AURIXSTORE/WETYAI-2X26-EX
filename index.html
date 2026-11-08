@@ -4,20 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WETYAI 2X26 EX // MEMBER DIRECTORY</title>
+    <title>WETYAI 2X26 EX // TEMSPEED KING OF WEAPON</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&family=Orbitron:wght@600;800;900&family=Cinzel:wght@700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&family=Orbitron:wght@600;700;800;900&family=Cinzel:wght@700&display=swap"
         rel="stylesheet">
 
     <script>
-        // ลิงก์รูปภาพโลโก้หลัก
         const LOGO_URL = 'https://i.postimg.cc/tRhdD95C/logo1-500x500-4.png';
         const CLAN_FACEBOOK_URL = 'https://facebook.com';
+        const DEFAULT_FB_THUMBNAIL = 'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=800&auto=format&fit=crop';
 
         tailwind.config = {
             darkMode: 'class',
@@ -57,9 +57,9 @@
 
         .glowing-bg {
             background:
-                radial-gradient(circle at 50% 10%, rgba(212, 175, 55, 0.12) 0%, transparent 60%),
-                radial-gradient(circle at 10% 80%, rgba(180, 140, 30, 0.08) 0%, transparent 50%),
-                radial-gradient(circle at 90% 90%, rgba(255, 255, 255, 0.04) 0%, transparent 50%),
+                radial-gradient(circle at 50% 10%, rgba(212, 175, 55, 0.15) 0%, transparent 60%),
+                radial-gradient(circle at 10% 80%, rgba(180, 140, 30, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 90% 90%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
                 radial-gradient(circle at 50% 50%, #030304 0%, #010102 100%);
         }
 
@@ -83,30 +83,30 @@
             }
 
             100% {
-                opacity: 0.8;
-                filter: blur(50px);
+                opacity: 0.85;
+                filter: blur(55px);
             }
         }
 
         .directory-card {
-            background: rgba(10, 11, 16, 0.82);
-            backdrop-filter: blur(18px);
+            background: rgba(10, 11, 16, 0.85);
+            backdrop-filter: blur(20px);
             border: 1px solid rgba(255, 255, 255, 0.08);
             transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .directory-card:hover {
-            border-color: rgba(212, 175, 55, 0.6);
-            transform: translateY(-5px);
-            box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.95), 0 0 25px rgba(212, 175, 55, 0.2);
+            border-color: rgba(212, 175, 55, 0.7);
+            transform: translateY(-6px);
+            box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.95), 0 0 30px rgba(212, 175, 55, 0.25);
         }
 
         .category-tab.active {
-            background-color: #d4af37;
+            background: linear-gradient(135deg, #d4af37 0%, #f3e5ab 100%);
             color: #000000;
-            font-weight: 700;
+            font-weight: 800;
             border-color: #d4af37;
-            box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
         }
 
         ::-webkit-scrollbar {
@@ -125,6 +125,10 @@
         ::-webkit-scrollbar-thumb:hover {
             background: #d4af37;
         }
+
+        .neon-gold-text {
+            text-shadow: 0 0 10px rgba(212, 175, 55, 0.5), 0 0 20px rgba(212, 175, 55, 0.3);
+        }
     </style>
 </head>
 
@@ -140,7 +144,7 @@
 
     <!-- NOTIFICATION TOAST -->
     <div id="toastNotification"
-        class="fixed top-5 right-5 z-50 transform translate-x-full transition-transform duration-300 flex items-center gap-3 bg-black/95 border border-amber-500/60 p-4 shadow-2xl font-mono text-xs text-white max-w-sm">
+        class="fixed top-5 right-5 z-50 transform translate-x-full transition-transform duration-300 flex items-center gap-3 bg-black/95 border border-amber-500/60 p-4 shadow-2xl font-mono text-xs text-white max-w-sm rounded-xl">
         <i class="fa-solid fa-circle-check text-amber-400 text-lg"></i>
         <div>
             <div id="toastTitle" class="font-bold text-amber-300 font-orbitron">SYSTEM NOTICE</div>
@@ -165,14 +169,14 @@
                 <div class="border-t sm:border-t-0 sm:border-l border-gray-800/80 pt-4 sm:pt-0 sm:pl-6">
                     <div class="flex items-center justify-center sm:justify-start gap-2">
                         <span
-                            class="px-2.5 py-0.5 text-[10px] font-bold bg-amber-400 text-black font-orbitron tracking-widest uppercase rounded">CLAN
-                            DIRECTORY</span>
+                            class="px-2.5 py-0.5 text-[10px] font-extrabold bg-gradient-to-r from-amber-400 to-amber-200 text-black font-orbitron tracking-widest uppercase rounded">TEMSPEED
+                            // KING OF WEAPON</span>
                         <span class="text-xs text-emerald-400 font-mono flex items-center gap-1.5">
                             <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> SYSTEM ACTIVE
                         </span>
                     </div>
                     <h1 class="text-2xl sm:text-4xl font-black font-orbitron text-white tracking-wider mt-1.5">
-                        WETYAI <span class="text-amber-400 drop-shadow-[0_0_10px_rgba(212,175,55,0.5)]">2X26 EX</span>
+                        WETYAI <span class="text-amber-400 neon-gold-text">2X26 EX</span>
                     </h1>
                     <p class="text-xs sm:text-sm text-gray-300 font-cinzel italic tracking-widest mt-0.5">"Together We
                         Stand Forever Wetyai"</p>
@@ -182,7 +186,7 @@
             <!-- AUTH & SOCIAL LINKS PANEL -->
             <div class="flex flex-col sm:flex-row items-center gap-3 w-full md:w-auto justify-center font-kanit">
                 <a id="clanFbBtn" href="#" target="_blank"
-                    class="px-4 py-2.5 text-xs font-bold text-white bg-blue-600/30 hover:bg-blue-600 border border-blue-500/50 transition rounded-xl flex items-center gap-2">
+                    class="px-4 py-2.5 text-xs font-bold text-white bg-blue-600/30 hover:bg-blue-600 border border-blue-500/50 transition rounded-xl flex items-center gap-2 shadow-lg">
                     <i class="fa-brands fa-facebook text-lg text-blue-400 hover:text-white"></i>
                     <span>CLAN FACEBOOK</span>
                 </a>
@@ -205,7 +209,6 @@
                                 class="px-1.5 py-0.2 text-[9px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/50 rounded">ADMIN</span>
                         </div>
                     </div>
-                    <!-- ปุ่มเพิ่มสมาชิกเฉพาะแอดมิน -->
                     <button onclick="openAddMemberModal()"
                         class="px-3 py-1.5 text-xs text-black bg-amber-400 hover:bg-amber-300 font-bold rounded-lg flex items-center gap-1.5 shadow-[0_0_10px_rgba(212,175,55,0.4)]">
                         <i class="fa-solid fa-user-plus"></i> เพิ่มสมาชิก
@@ -222,12 +225,12 @@
         <!-- STATS BAR -->
         <section class="grid grid-cols-2 md:grid-cols-2 gap-3 text-xs font-mono">
             <div class="directory-card p-4 rounded-xl flex flex-col justify-between">
-                <span class="text-gray-400 text-[11px] flex justify-between">TOTAL MEMBERS <i
-                        class="fa-solid fa-users text-gray-500"></i></span>
+                <span class="text-gray-400 text-[11px] flex justify-between uppercase">TOTAL MEMBERS <i
+                        class="fa-solid fa-users text-amber-400/70"></i></span>
                 <span id="statTotal" class="text-2xl font-bold font-orbitron text-white mt-1">0</span>
             </div>
             <div class="directory-card p-4 rounded-xl flex flex-col justify-between">
-                <span class="text-gray-400 text-[11px] flex justify-between">ACTIVE <i
+                <span class="text-gray-400 text-[11px] flex justify-between uppercase">ACTIVE <i
                         class="fa-solid fa-signal text-emerald-400"></i></span>
                 <span id="statActive" class="text-2xl font-bold font-orbitron text-emerald-400 mt-1">0</span>
             </div>
@@ -237,21 +240,14 @@
         <section class="directory-card p-4 rounded-xl flex flex-col lg:flex-row items-center justify-between gap-4">
             <div class="flex flex-wrap items-center gap-2 w-full lg:w-auto">
                 <button onclick="setCategory('ALL')" id="tabALL"
-                    class="category-tab active px-4 py-2 text-xs font-bold rounded-lg border border-gray-800 transition">
-                    ALL MEMBERS
-                </button>
+                    class="category-tab active px-4 py-2 text-xs font-bold rounded-lg border border-gray-800 transition">ALL
+                    MEMBERS</button>
                 <button onclick="setCategory('Leadership')" id="tabLeadership"
-                    class="category-tab px-4 py-2 text-xs font-bold rounded-lg border border-gray-800 text-gray-400 hover:text-white transition">
-                    LEADERSHIP
-                </button>
+                    class="category-tab px-4 py-2 text-xs font-bold rounded-lg border border-gray-800 text-gray-400 hover:text-white transition">LEADERSHIP</button>
                 <button onclick="setCategory('Officers')" id="tabOfficers"
-                    class="category-tab px-4 py-2 text-xs font-bold rounded-lg border border-gray-800 text-gray-400 hover:text-white transition">
-                    OFFICERS
-                </button>
+                    class="category-tab px-4 py-2 text-xs font-bold rounded-lg border border-gray-800 text-gray-400 hover:text-white transition">OFFICERS</button>
                 <button onclick="setCategory('Specialists')" id="tabSpecialists"
-                    class="category-tab px-4 py-2 text-xs font-bold rounded-lg border border-gray-800 text-gray-400 hover:text-white transition">
-                    SPECIALISTS
-                </button>
+                    class="category-tab px-4 py-2 text-xs font-bold rounded-lg border border-gray-800 text-gray-400 hover:text-white transition">SPECIALISTS</button>
             </div>
 
             <div class="relative w-full lg:w-72">
@@ -264,9 +260,7 @@
 
         <!-- ROSTER MEMBER CARDS GRID -->
         <main class="flex-1">
-            <div id="rosterGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-                <!-- Dynamic cards injected via JavaScript -->
-            </div>
+            <div id="rosterGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"></div>
         </main>
 
         <!-- FOOTER -->
@@ -274,16 +268,14 @@
             class="directory-card p-6 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-400 border-gray-800/80">
             <div class="flex items-center gap-3">
                 <img id="footerLogoImg" src="" class="h-8 object-contain opacity-80" alt="Wetyai Footer Logo">
-                <span>© 2026 WETYAI 2X26 EX. All rights reserved.</span>
+                <span>© 2026 WETYAI 2X26 EX. TEMSPEED KING OF WEAPON.</span>
             </div>
-
             <div class="flex items-center gap-4">
                 <a id="footerFbBtn" href="#" target="_blank"
                     class="text-gray-400 hover:text-blue-400 text-lg transition" title="Clan Facebook">
                     <i class="fa-brands fa-facebook"></i>
                 </a>
             </div>
-
             <div class="font-cinzel text-amber-400 font-bold tracking-widest text-center">
                 "TOGETHER WE STAND FOREVER WETYAI"
             </div>
@@ -320,19 +312,21 @@
         </div>
     </div>
 
-    <!-- MODAL ADD MEMBER (ADMIN ONLY) -->
+    <!-- MODAL ADD / EDIT MEMBER (ADMIN ONLY) -->
     <div id="addMemberModal"
         class="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-md hidden p-4">
-        <div class="directory-card max-w-md w-full p-6 rounded-2xl relative border-amber-500/50 bg-black/95">
+        <div
+            class="directory-card max-w-md w-full p-6 rounded-2xl relative border-amber-500/50 bg-black/95 max-h-[90vh] overflow-y-auto">
             <button onclick="closeAddMemberModal()"
                 class="absolute top-4 right-4 text-gray-400 hover:text-white text-lg"><i
                     class="fa-solid fa-xmark"></i></button>
             <div class="text-center mb-5">
-                <i class="fa-solid fa-user-plus text-3xl text-amber-400 mb-2"></i>
-                <h3 class="font-orbitron font-bold text-white text-lg">ADD NEW MEMBER</h3>
-                <p class="text-xs text-gray-400">เพิ่มสมาชิกใหม่เข้าสู่แคลน</p>
+                <i id="memberFormIcon" class="fa-solid fa-user-plus text-3xl text-amber-400 mb-2"></i>
+                <h3 id="memberFormTitle" class="font-orbitron font-bold text-white text-lg">ADD NEW MEMBER</h3>
+                <p class="text-xs text-gray-400">กรอกข้อมูลสมาชิกแคลน</p>
             </div>
-            <form onsubmit="handleAddMemberSubmit(event)" class="space-y-3 text-xs font-kanit">
+            <form onsubmit="handleMemberSubmit(event)" class="space-y-3 text-xs font-kanit">
+                <input type="hidden" id="editMemberId" value="">
                 <div>
                     <label class="block text-gray-400 mb-1">ชื่อสมาชิก / CALLSIGN *</label>
                     <input type="text" id="addName" required placeholder="เช่น สมชาย สายลุย"
@@ -343,23 +337,30 @@
                     <input type="url" id="addFacebook" required placeholder="https://www.facebook.com/..."
                         class="w-full bg-black border border-gray-800 rounded-lg p-2.5 text-white focus:border-amber-400 outline-none">
                 </div>
+                <div>
+                    <label class="block text-gray-400 mb-1">FACEBOOK VIDEO LINK (คลิปไฮไลท์เฟสบุ๊ค)</label>
+                    <input type="url" id="addFbVideo" placeholder="https://www.facebook.com/watch/..."
+                        class="w-full bg-black border border-gray-800 rounded-lg p-2.5 text-white focus:border-amber-400 outline-none">
+                </div>
+                <div>
+                    <label class="block text-gray-400 mb-1">YOUTUBE VIDEO LINK (คลิปไฮไลท์ยูทูป)</label>
+                    <input type="url" id="addYoutube" placeholder="https://www.youtube.com/watch?v=..."
+                        class="w-full bg-black border border-gray-800 rounded-lg p-2.5 text-white focus:border-amber-400 outline-none">
+                </div>
                 <div class="grid grid-cols-2 gap-2">
                     <div>
-                        <label class="block text-gray-400 mb-1">ROLE / สายอาชีพ *</label>
-                        <select id="addRole"
-                            class="w-full bg-black border border-gray-800 rounded-lg p-2.5 text-white focus:border-amber-400 outline-none">
-                            <option value="Commander">Commander</option>
-                            <option value="Vanguard">Vanguard</option>
-                            <option value="Sniper">Sniper</option>
-                            <option value="Engineer">Engineer</option>
-                            <option value="Medic">Medic</option>
-                            <option value="Specialist">Specialist</option>
+                        <label class="block text-gray-400 mb-1">RANK / ยศ *</label>
+                        <select id="addRank"
+                            class="w-full bg-black border border-gray-800 rounded-lg p-2 text-white focus:border-amber-400 outline-none">
+                            <option value="OFFICIAL MEMBER">OFFICIAL MEMBER</option>
+                            <option value="KING">KING</option>
+                            <option value="LEADER">LEADER</option>
                         </select>
                     </div>
                     <div>
                         <label class="block text-gray-400 mb-1">หมวดหมู่ *</label>
                         <select id="addCategory"
-                            class="w-full bg-black border border-gray-800 rounded-lg p-2.5 text-white focus:border-amber-400 outline-none">
+                            class="w-full bg-black border border-gray-800 rounded-lg p-2 text-white focus:border-amber-400 outline-none">
                             <option value="ALL">ทั่วไป (ALL)</option>
                             <option value="Leadership">Leadership</option>
                             <option value="Officers">Officers</option>
@@ -367,8 +368,9 @@
                         </select>
                     </div>
                 </div>
-                <button type="submit"
-                    class="w-full py-2.5 text-xs text-black bg-amber-400 hover:bg-amber-300 font-bold rounded-lg uppercase font-orbitron mt-3">ยืนยันเพิ่มสมาชิก</button>
+
+                <button type="submit" id="memberFormBtn"
+                    class="w-full py-2.5 text-xs text-black bg-amber-400 hover:bg-amber-300 font-bold rounded-lg uppercase font-orbitron mt-3">บันทึกข้อมูลสมาชิก</button>
             </form>
         </div>
     </div>
@@ -376,7 +378,8 @@
     <!-- MODAL DOSSIER DETAILS -->
     <div id="detailModal"
         class="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-md hidden p-4">
-        <div class="directory-card max-w-md w-full p-6 rounded-2xl relative border-amber-500/50 bg-black/95">
+        <div
+            class="directory-card max-w-lg w-full p-6 rounded-2xl relative border-amber-500/50 bg-black/95 max-h-[90vh] overflow-y-auto">
             <button onclick="closeDetailModal()"
                 class="absolute top-4 right-4 text-gray-400 hover:text-white text-lg"><i
                     class="fa-solid fa-xmark"></i></button>
@@ -385,18 +388,16 @@
     </div>
 
     <script>
-        // รายชื่อสมาชิกเริ่มต้นในแคลน
         const defaultMembers = [
-            { id: 1, name: 'น้องปุ้น เดินยังเป๋', category: 'Leadership', role: 'Commander', rank: 'Supreme Leader', status: 'Active', approved: true, facebook: 'https://www.facebook.com/profile.php?id=61591364465294', discord: 'N/A', isLeader: true },
-            { id: 2, name: 'Yoru Temspeed', category: 'ALL', role: 'Sniper', rank: 'Official Member', status: 'Active', approved: true, facebook: 'https://www.facebook.com/sopon.iol#', discord: 'N/A' },
-            { id: 3, name: 'Zan Ravencass', category: 'ALL', role: 'Specialist', rank: 'Official Member', status: 'Active', approved: true, facebook: 'https://www.facebook.com/jess.darkstack', discord: 'N/A' },
-            { id: 4, name: 'มายเนมอีสคูส วัดได้ทุกเหวด', category: 'ALL', role: 'Vanguard', rank: 'Official Member', status: 'Active', approved: true, facebook: 'https://www.facebook.com/cuzma.merrizs', discord: 'N/A' },
-            { id: 5, name: 'น้องจูลี่ หัวใจน้องกัน', category: 'ALL', role: 'Medic', rank: 'Official Member', status: 'Active', approved: true, facebook: 'https://www.facebook.com/profile.php?id=61593294487425#', discord: 'N/A' },
-            { id: 6, name: 'น่องโดนัท มามี่โปะโกะ', category: 'ALL', role: 'Vanguard', rank: 'Official Member', status: 'Active', approved: true, facebook: 'https://www.facebook.com/profile.php?id=61577102141723#', discord: 'N/A' },
-            { id: 7, name: 'Mark Darkstack', category: 'ALL', role: 'Vanguard', rank: 'Official Member', status: 'Active', approved: true, facebook: 'https://www.facebook.com/profile.php?id=61580594264366', discord: 'N/A' }
+            { id: 1, name: 'น้องปุ้น เดินยังเป๋', category: 'Leadership', role: 'Commander', rank: 'LEADER', status: 'Active', approved: true, facebook: 'https://www.facebook.com/profile.php?id=61591364465294', fbVideo: '', youtube: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', discord: 'N/A' },
+            { id: 2, name: 'Yoru Temspeed', category: 'ALL', role: 'Sniper', rank: 'OFFICIAL MEMBER', status: 'Active', approved: true, facebook: 'https://www.facebook.com/sopon.iol#', fbVideo: '', youtube: '', discord: 'N/A' },
+            { id: 3, name: 'Zan Ravencass', category: 'ALL', role: 'Specialist', rank: 'KING', status: 'Active', approved: true, facebook: 'https://www.facebook.com/jess.darkstack', fbVideo: '', youtube: '', discord: 'N/A' },
+            { id: 4, name: 'มายเนมอีสคูส วัดได้ทุกเหวด', category: 'ALL', role: 'Vanguard', rank: 'OFFICIAL MEMBER', status: 'Active', approved: true, facebook: 'https://www.facebook.com/cuzma.merrizs', fbVideo: '', youtube: '', discord: 'N/A' },
+            { id: 5, name: 'น้องจูลี่ หัวใจน้องกัน', category: 'ALL', role: 'Medic', rank: 'OFFICIAL MEMBER', status: 'Active', approved: true, facebook: 'https://www.facebook.com/profile.php?id=61593294487425#', fbVideo: '', youtube: '', discord: 'N/A' },
+            { id: 6, name: 'น่องโดนัท มามี่โปะโกะ', category: 'ALL', role: 'Vanguard', rank: 'OFFICIAL MEMBER', status: 'Active', approved: true, facebook: 'https://www.facebook.com/profile.php?id=61577102141723#', fbVideo: '', youtube: '', discord: 'N/A' },
+            { id: 7, name: 'Mark Darkstack', category: 'ALL', role: 'Vanguard', rank: 'OFFICIAL MEMBER', status: 'Active', approved: true, facebook: 'https://www.facebook.com/profile.php?id=61580594264366', fbVideo: '', youtube: '', discord: 'N/A' }
         ];
 
-        // ข้อมูลแอดมิน
         const ADMIN_CREDENTIALS = {
             username: 'admin',
             password: 'wetyai2x26admin'
@@ -405,6 +406,18 @@
         let members = JSON.parse(localStorage.getItem('wetyai_directory_members')) || defaultMembers;
         let currentUser = JSON.parse(localStorage.getItem('wetyai_directory_user')) || null;
         let currentCategory = 'ALL';
+
+        function getYoutubeVideoId(url) {
+            if (!url) return null;
+            let regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+            let match = url.match(regExp);
+            return (match && match[2].length === 11) ? match[2] : null;
+        }
+
+        function getFbAutoThumbnail(url) {
+            if (!url) return DEFAULT_FB_THUMBNAIL;
+            return `https://api.microlink.io/?url=${encodeURIComponent(url)}&embed=image.url`;
+        }
 
         function initLogos() {
             document.getElementById('headerLogoImg').src = LOGO_URL;
@@ -459,6 +472,22 @@
             renderRoster();
         }
 
+        function moveMember(e, index, direction) {
+            e.stopPropagation();
+            if (!currentUser || !currentUser.isAdmin) return;
+
+            const targetIndex = index + direction;
+            if (targetIndex < 0 || targetIndex >= members.length) return;
+
+            const temp = members[index];
+            members[index] = members[targetIndex];
+            members[targetIndex] = temp;
+
+            saveData();
+            renderRoster();
+            showToast('ปรับตำแหน่งสำเร็จ', 'ย้ายลำดับรายชื่อสมาชิกเรียบร้อย');
+        }
+
         function renderRoster() {
             const search = document.getElementById('searchInput').value.toLowerCase().trim();
             const grid = document.getElementById('rosterGrid');
@@ -468,7 +497,7 @@
             document.getElementById('statActive').innerText = approvedMembers.filter(m => m.status === 'Active').length;
 
             let displayList = approvedMembers.filter(m => {
-                const matchSearch = m.name.toLowerCase().includes(search) || m.role.toLowerCase().includes(search);
+                const matchSearch = m.name.toLowerCase().includes(search) || (m.role && m.role.toLowerCase().includes(search)) || m.rank.toLowerCase().includes(search);
                 if (currentCategory === 'ALL') return matchSearch;
                 return matchSearch && m.category === currentCategory;
             });
@@ -480,22 +509,56 @@
 
             const isAdmin = currentUser && currentUser.isAdmin;
 
-            grid.innerHTML = displayList.map(m => {
+            grid.innerHTML = displayList.map((m) => {
                 const fbUrl = m.facebook || 'https://facebook.com';
+                const hasYoutube = Boolean(m.youtube);
+                const hasFbVideo = Boolean(m.fbVideo);
+                const originalIndex = members.findIndex(item => item.id === m.id);
+
+                const rankText = m.rank || 'OFFICIAL MEMBER';
+                const isLeader = rankText === 'LEADER';
+                const isKing = rankText === 'KING';
+
+                let rankBadgeStyle = 'bg-blue-900/40 text-blue-300 border border-blue-500/50 shadow-[0_0_8px_rgba(59,130,246,0.3)]';
+                let rankTextStyle = 'text-blue-300 font-bold';
+
+                if (isLeader) {
+                    rankBadgeStyle = 'bg-amber-500/20 text-amber-300 border border-amber-500/50 shadow-[0_0_10px_rgba(212,175,55,0.4)]';
+                    rankTextStyle = 'text-amber-300 font-bold';
+                } else if (isKing) {
+                    rankBadgeStyle = 'bg-indigo-500/20 text-indigo-300 border border-indigo-500/40 shadow-[0_0_10px_rgba(99,102,241,0.3)]';
+                    rankTextStyle = 'text-indigo-300 font-bold';
+                }
 
                 return `
                 <div class="directory-card p-5 rounded-2xl flex flex-col justify-between group cursor-pointer" onclick="openDetailModal(${m.id})">
                     <div>
                         <div class="flex items-center justify-between mb-3">
-                            <span class="px-2.5 py-0.5 text-[9px] font-bold font-orbitron uppercase rounded ${m.isLeader ? 'bg-amber-500/20 text-amber-300 border border-amber-500/50' :
-                        m.status === 'Active' ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30' : 'bg-gray-800 text-gray-400'
-                    }">${m.isLeader ? 'LEADER' : m.rank}</span>
+                            <span class="px-2.5 py-0.5 text-[9px] font-bold font-orbitron uppercase rounded tracking-wider ${rankBadgeStyle}">${rankText}</span>
                             
-                            <div class="flex items-center gap-2">
+                            <div class="flex items-center gap-1.5">
+                                ${isAdmin ? `
+                                    <button onclick="moveMember(event, ${originalIndex}, -1)" ${originalIndex === 0 ? 'disabled class="opacity-30 p-1 text-gray-600"' : 'class="p-1.5 text-xs text-gray-300 hover:text-amber-400 bg-white/5 hover:bg-white/10 rounded-lg"'} title="ย้ายขึ้น">▲</button>
+                                    <button onclick="moveMember(event, ${originalIndex}, 1)" ${originalIndex === members.length - 1 ? 'disabled class="opacity-30 p-1 text-gray-600"' : 'class="p-1.5 text-xs text-gray-300 hover:text-amber-400 bg-white/5 hover:bg-white/10 rounded-lg"'} title="ย้ายลง">▼</button>
+                                ` : ''}
+
                                 <a href="${fbUrl}" target="_blank" onclick="event.stopPropagation()" class="p-2 text-blue-400 hover:text-white bg-blue-500/10 hover:bg-blue-600 border border-blue-500/30 rounded-xl transition" title="Facebook Profile">
                                     <i class="fa-brands fa-facebook text-base"></i>
                                 </a>
-                                ${isAdmin && !m.isLeader ? `
+                                ${hasYoutube ? `
+                                    <div class="p-2 text-red-500 bg-red-500/10 border border-red-500/30 rounded-xl" title="มีคลิปไฮไลท์ YouTube">
+                                        <i class="fa-brands fa-youtube text-base"></i>
+                                    </div>
+                                ` : ''}
+                                ${hasFbVideo ? `
+                                    <div class="p-2 text-blue-400 bg-blue-500/10 border border-blue-500/30 rounded-xl" title="มีคลิปไฮไลท์ Facebook">
+                                        <i class="fa-solid fa-circle-play text-base"></i>
+                                    </div>
+                                ` : ''}
+                                ${isAdmin ? `
+                                    <button onclick="openEditMemberModal(event, ${m.id})" class="p-2 text-amber-400 hover:text-white bg-amber-500/10 hover:bg-amber-600 border border-amber-500/30 rounded-xl transition" title="แก้ไขสมาชิก">
+                                        <i class="fa-solid fa-pen-to-square text-sm"></i>
+                                    </button>
                                     <button onclick="deleteMember(event, ${m.id})" class="p-2 text-red-400 hover:text-white bg-red-500/10 hover:bg-red-600 border border-red-500/30 rounded-xl transition" title="ลบสมาชิก">
                                         <i class="fa-solid fa-trash-can text-sm"></i>
                                     </button>
@@ -504,11 +567,11 @@
                         </div>
                         <div class="my-2">
                             <h3 class="font-orbitron font-extrabold text-xl text-white tracking-wide group-hover:text-amber-400 transition">${m.name}</h3>
-                            <div class="text-xs font-mono text-amber-400/80 mt-1">${m.role}</div>
+                            <div class="text-xs font-mono text-amber-400/80 mt-1"><span class="${rankTextStyle}">${rankText}</span></div>
                         </div>
                     </div>
                     <div class="pt-4 border-t border-gray-800/80 flex items-center justify-between text-xs font-mono">
-                        <span class="text-[11px] text-gray-400 group-hover:text-white transition flex items-center gap-1 font-orbitron ml-auto">DOSSIER <i class="fa-solid fa-angle-right text-[10px]"></i></span>
+                        <span class="text-[11px] text-gray-400 group-hover:text-white transition flex items-center gap-1 font-orbitron ml-auto">DOSSIER & MEDIA <i class="fa-solid fa-angle-right text-[10px]"></i></span>
                     </div>
                 </div>
                 `;
@@ -518,7 +581,36 @@
         function openAuthModal() { document.getElementById('authModal').classList.remove('hidden'); }
         function closeAuthModal() { document.getElementById('authModal').classList.add('hidden'); }
 
-        function openAddMemberModal() { document.getElementById('addMemberModal').classList.remove('hidden'); }
+        function openAddMemberModal() {
+            document.getElementById('editMemberId').value = '';
+            document.getElementById('memberFormIcon').className = 'fa-solid fa-user-plus text-3xl text-amber-400 mb-2';
+            document.getElementById('memberFormTitle').innerText = 'ADD NEW MEMBER';
+            document.getElementById('addName').value = '';
+            document.getElementById('addFacebook').value = '';
+            document.getElementById('addFbVideo').value = '';
+            document.getElementById('addYoutube').value = '';
+            document.getElementById('addRank').value = 'OFFICIAL MEMBER';
+            document.getElementById('addCategory').value = 'ALL';
+            document.getElementById('addMemberModal').classList.remove('hidden');
+        }
+
+        function openEditMemberModal(e, id) {
+            e.stopPropagation();
+            const m = members.find(item => item.id === id);
+            if (!m) return;
+
+            document.getElementById('editMemberId').value = m.id;
+            document.getElementById('memberFormIcon').className = 'fa-solid fa-user-pen text-3xl text-amber-400 mb-2';
+            document.getElementById('memberFormTitle').innerText = 'EDIT MEMBER';
+            document.getElementById('addName').value = m.name;
+            document.getElementById('addFacebook').value = m.facebook || '';
+            document.getElementById('addFbVideo').value = m.fbVideo || '';
+            document.getElementById('addYoutube').value = m.youtube || '';
+            document.getElementById('addRank').value = m.rank || 'OFFICIAL MEMBER';
+            document.getElementById('addCategory').value = m.category || 'ALL';
+            document.getElementById('addMemberModal').classList.remove('hidden');
+        }
+
         function closeAddMemberModal() { document.getElementById('addMemberModal').classList.add('hidden'); }
 
         function handleLoginSubmit(e) {
@@ -538,35 +630,50 @@
             }
         }
 
-        function handleAddMemberSubmit(e) {
+        function handleMemberSubmit(e) {
             e.preventDefault();
             if (!currentUser || !currentUser.isAdmin) return;
 
+            const editId = document.getElementById('editMemberId').value;
             const name = document.getElementById('addName').value.trim();
             const facebook = document.getElementById('addFacebook').value.trim();
-            const role = document.getElementById('addRole').value;
+            const fbVideo = document.getElementById('addFbVideo').value.trim();
+            const youtube = document.getElementById('addYoutube').value.trim();
+            const rank = document.getElementById('addRank').value;
             const category = document.getElementById('addCategory').value;
 
-            const newMember = {
-                id: Date.now(),
-                name: name,
-                category: category,
-                role: role,
-                rank: 'Official Member',
-                status: 'Active',
-                approved: true,
-                facebook: facebook,
-                discord: 'N/A'
-            };
+            if (editId) {
+                const index = members.findIndex(m => m.id == editId);
+                if (index !== -1) {
+                    members[index].name = name;
+                    members[index].facebook = facebook;
+                    members[index].fbVideo = fbVideo;
+                    members[index].youtube = youtube;
+                    members[index].rank = rank;
+                    members[index].category = category;
+                    showToast('แก้ไขสำเร็จ', `อัปเดตข้อมูล ${name} เรียบร้อยแล้ว`);
+                }
+            } else {
+                const newMember = {
+                    id: Date.now(),
+                    name: name,
+                    category: category,
+                    role: '',
+                    rank: rank,
+                    status: 'Active',
+                    approved: true,
+                    facebook: facebook,
+                    fbVideo: fbVideo,
+                    youtube: youtube,
+                    discord: 'N/A'
+                };
+                members.unshift(newMember);
+                showToast('เพิ่มสำเร็จ', `เพิ่มคุณ ${name} ไว้หน้าสุดเรียบร้อยแล้ว`);
+            }
 
-            members.push(newMember);
             saveData();
             closeAddMemberModal();
-            showToast('เพิ่มสำเร็จ', `เพิ่มคุณ ${name} เรียบร้อยแล้ว`);
             renderRoster();
-
-            document.getElementById('addName').value = '';
-            document.getElementById('addFacebook').value = '';
         }
 
         function deleteMember(e, id) {
@@ -594,32 +701,90 @@
             if (!m) return;
             const modalContent = document.getElementById('modalContent');
             const fbUrl = m.facebook || 'https://facebook.com';
+            const fbVideoUrl = m.fbVideo;
+            const hasFbVideo = Boolean(m.fbVideo);
+            const fbThumbImg = getFbAutoThumbnail(fbVideoUrl);
+            const ytId = getYoutubeVideoId(m.youtube);
+            const ytThumbUrl = ytId ? `https://img.youtube.com/vi/${ytId}/hqdefault.jpg` : null;
+
+            const rankText = m.rank || 'OFFICIAL MEMBER';
+            const isLeader = rankText === 'LEADER';
+            const isKing = rankText === 'KING';
+
+            let rankBadgeStyle = 'bg-blue-900/40 text-blue-300 border border-blue-500/50 shadow-[0_0_8px_rgba(59,130,246,0.3)]';
+            let rankTextStyle = 'text-blue-300 font-bold text-sm';
+
+            if (isLeader) {
+                rankBadgeStyle = 'bg-amber-500/20 text-amber-300 border border-amber-500/50 shadow-[0_0_10px_rgba(212,175,55,0.4)]';
+                rankTextStyle = 'text-amber-300 font-bold text-sm';
+            } else if (isKing) {
+                rankBadgeStyle = 'bg-indigo-500/20 text-indigo-300 border border-indigo-500/40 shadow-[0_0_10px_rgba(99,102,241,0.3)]';
+                rankTextStyle = 'text-indigo-300 font-bold text-sm';
+            }
+
             modalContent.innerHTML = `
                 <div class="flex flex-col gap-4 font-kanit">
-                    <div class="border-b border-gray-800 pb-3">
-                        <span class="text-xs font-mono text-gray-500">MEMBER DOSSIER</span>
-                        <h2 class="text-2xl font-bold font-orbitron text-white mt-0.5">${m.name}</h2>
+                    <div class="border-b border-gray-800 pb-3 flex justify-between items-center">
+                        <div>
+                            <span class="text-xs font-mono text-amber-400/80">TEMSPEED // MEMBER DOSSIER</span>
+                            <h2 class="text-2xl font-bold font-orbitron text-white mt-0.5">${m.name}</h2>
+                        </div>
+                        <span class="px-2.5 py-1 text-xs font-bold font-orbitron uppercase rounded ${rankBadgeStyle}">${rankText}</span>
                     </div>
-                    <div class="grid grid-cols-2 gap-3 text-xs font-mono">
-                        <div class="bg-black/60 p-3 border border-gray-800 rounded-lg"><span class="text-gray-500 block text-[10px]">ROLE</span><span class="text-amber-400 font-bold text-sm">${m.role}</span></div>
-                        <div class="bg-black/60 p-3 border border-gray-800 rounded-lg"><span class="text-gray-500 block text-[10px]">RANK</span><span class="text-white font-bold text-sm">${m.rank}</span></div>
-                    </div>
+                    <div class="bg-black/60 p-3 border border-gray-800 rounded-lg text-xs font-mono"><span class="text-gray-500 block text-[10px]">RANK / ยศ</span><span class="${rankTextStyle}">${rankText}</span></div>
                     
                     <div class="bg-black/60 p-3 border border-gray-800 rounded-lg text-xs font-mono flex items-center justify-between">
                         <div>
                             <span class="text-gray-500 block text-[10px]">FACEBOOK PROFILE</span>
-                            <a href="${fbUrl}" target="_blank" class="text-blue-400 hover:underline font-bold truncate block max-w-[220px]">${fbUrl}</a>
+                            <a href="${fbUrl}" target="_blank" class="text-blue-400 hover:underline font-bold truncate block max-w-[200px] sm:max-w-[260px]">${fbUrl}</a>
                         </div>
-                        <a href="${fbUrl}" target="_blank" class="px-3 py-1.5 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-lg text-[10px] flex items-center gap-1">
+                        <a href="${fbUrl}" target="_blank" class="px-3 py-1.5 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-lg text-[10px] flex items-center gap-1 shadow-lg">
                             <i class="fa-brands fa-facebook"></i> VISIT
                         </a>
                     </div>
 
+                    <!-- HIGHLIGHT VIDEO / FACEBOOK -->
+                    ${hasFbVideo ? `
+                        <div class="bg-black/60 p-3 border border-gray-800 rounded-lg text-xs font-mono">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-gray-500 block text-[10px] flex items-center gap-1 text-blue-400 font-bold">
+                                    <i class="fa-brands fa-facebook text-sm"></i> HIGHLIGHT VIDEO / คลิปไฮไลท์ FACEBOOK
+                                </span>
+                                <a href="${fbVideoUrl}" target="_blank" class="text-[10px] text-blue-400 hover:underline font-bold">เปิดใน Facebook ↗</a>
+                            </div>
+                            <div class="relative w-full overflow-hidden rounded-xl border border-blue-500/40 group cursor-pointer shadow-xl bg-slate-950">
+                                <img src="${fbThumbImg}" onError="this.src='${DEFAULT_FB_THUMBNAIL}'" alt="Facebook Video Thumbnail" class="w-full h-48 object-cover group-hover:scale-105 transition duration-500">
+                                <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition flex items-center justify-center">
+                                    <a href="${fbVideoUrl}" target="_blank" class="px-5 py-2.5 bg-blue-600/90 hover:bg-blue-600 text-white font-bold text-xs rounded-xl flex items-center gap-2 shadow-2xl backdrop-blur-md border border-white/20 transform group-hover:scale-110 transition duration-300">
+                                        <i class="fa-solid fa-play text-sm"></i> ดูวิดีโอคลิปไฮไลท์บน Facebook
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    ` : ''}
+
+                    <!-- HIGHLIGHT VIDEO / YOUTUBE -->
+                    ${ytId ? `
+                        <div class="bg-black/60 p-3 border border-gray-800 rounded-lg text-xs font-mono">
+                            <span class="text-gray-500 block text-[10px] mb-2 flex items-center gap-1 text-red-400 font-bold">
+                                <i class="fa-brands fa-youtube text-sm"></i> HIGHLIGHT VIDEO / คลิปไฮไลท์ YOUTUBE
+                            </span>
+                            <div class="relative w-full overflow-hidden rounded-xl border border-red-500/40 group cursor-pointer shadow-xl bg-slate-950">
+                                <img src="${ytThumbUrl}" alt="YouTube Thumbnail" class="w-full h-48 object-cover group-hover:scale-105 transition duration-500">
+                                <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition flex items-center justify-center">
+                                    <a href="${m.youtube}" target="_blank" class="px-5 py-2.5 bg-red-600/90 hover:bg-red-600 text-white font-bold text-xs rounded-xl flex items-center gap-2 shadow-2xl backdrop-blur-md border border-white/20 transform group-hover:scale-110 transition duration-300">
+                                        <i class="fa-solid fa-play text-sm"></i> ดูวิดีโอคลิปไฮไลท์
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    ` : ''}
+
                     <div class="bg-black/60 p-3 border border-gray-800 rounded-lg text-xs font-mono"><span class="text-gray-500 block text-[10px]">DISCORD CONTACT</span><span class="text-gray-200">${m.discord || 'N/A'}</span></div>
                 </div>
                 <div class="mt-6 pt-4 border-t border-gray-800 flex justify-between items-center">
-                    <span class="font-cinzel text-xs text-gray-500">WETYAI 2X26 EX</span>
-                    <button onclick="closeDetailModal()" class="px-4 py-1.5 text-xs text-black bg-amber-400 font-bold rounded-lg">ปิดหน้าต่าง</button>
+                    <span class="font-cinzel text-xs text-amber-400 font-bold">TEMSPEED // KING OF WEAPON</span>
+                    <button onclick="closeDetailModal()" class="px-4 py-1.5 text-xs text-black bg-amber-400 font-bold rounded-lg hover:bg-amber-300 transition">ปิดหน้าต่าง</button>
                 </div>
             `;
             document.getElementById('detailModal').classList.remove('hidden');
@@ -668,4 +833,4 @@
     </script>
 </body>
 
-</html>
+</html>ุ
