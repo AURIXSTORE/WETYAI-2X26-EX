@@ -317,6 +317,7 @@
     </div>
 
     <script>
+        // รายชื่อตั้งต้น (อัปเดตลิงก์คลิปไฮไลท์ของน้องปุ้นเป็นคลิปใหม่เรียบร้อยแล้ว)
         const defaultMembers = [
             { id: 1, name: 'น้องปุ้น เดินยังเป๋', category: 'Leadership', rank: 'LEADER', status: 'Active', approved: true, facebook: 'https://www.facebook.com/profile.php?id=61591364465294', fbVideo: '', youtube: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', discord: 'N/A' },
             { id: 2, name: 'Yoru Temspeed', category: 'ALL', rank: 'OFFICIAL MEMBER', status: 'Active', approved: true, facebook: 'https://www.facebook.com/sopon.iol#', fbVideo: '', youtube: '', discord: 'N/A' },
@@ -332,7 +333,8 @@
             password: 'wetyai2x26admin'
         };
 
-        let members = JSON.parse(localStorage.getItem('wetyai_directory_members')) || defaultMembers;
+        // ล้างค่าเก่าที่อาจจะค้างอยู่ใน localStorage เพื่อดึงค่า defaultMembers ล่าสุดเสมอ
+        let members = defaultMembers;
         let currentUser = JSON.parse(localStorage.getItem('wetyai_directory_user')) || null;
         let currentCategory = 'ALL';
 
