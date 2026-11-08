@@ -10,9 +10,7 @@
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&family=Orbitron:wght@600;700;800;900&family=Cinzel:wght@700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&family=Orbitron:wght@600;700;800;900&family=Cinzel:wght@700&display=swap" rel="stylesheet">
 
     <script>
         const LOGO_URL = 'https://i.postimg.cc/tRhdD95C/logo1-500x500-4.png';
@@ -77,15 +75,8 @@
         }
 
         @keyframes goldGlow {
-            0% {
-                opacity: 0.4;
-                filter: blur(30px);
-            }
-
-            100% {
-                opacity: 0.85;
-                filter: blur(55px);
-            }
+            0% { opacity: 0.4; filter: blur(30px); }
+            100% { opacity: 0.85; filter: blur(55px); }
         }
 
         .directory-card {
@@ -109,22 +100,10 @@
             box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
         }
 
-        ::-webkit-scrollbar {
-            width: 6px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: #030304;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: #1a1d2e;
-            border-radius: 3px;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: #d4af37;
-        }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #030304; }
+        ::-webkit-scrollbar-thumb { background: #1a1d2e; border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: #d4af37; }
 
         .neon-gold-text {
             text-shadow: 0 0 10px rgba(212, 175, 55, 0.5), 0 0 20px rgba(212, 175, 55, 0.3);
@@ -135,16 +114,13 @@
 <body class="glowing-bg relative flex flex-col justify-between selection:bg-amber-400 selection:text-black">
 
     <canvas id="particleCanvas" class="fixed inset-0 pointer-events-none z-0"></canvas>
-    <div
-        class="fixed top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-amber-500/10 rounded-full gold-glow-pulse pointer-events-none z-0">
-    </div>
+    <div class="fixed top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-amber-500/10 rounded-full gold-glow-pulse pointer-events-none z-0"></div>
 
     <!-- WATERMARK OVERLAY -->
     <div id="watermarkBg" class="fixed inset-0 z-0"></div>
 
     <!-- NOTIFICATION TOAST -->
-    <div id="toastNotification"
-        class="fixed top-5 right-5 z-50 transform translate-x-full transition-transform duration-300 flex items-center gap-3 bg-black/95 border border-amber-500/60 p-4 shadow-2xl font-mono text-xs text-white max-w-sm rounded-xl">
+    <div id="toastNotification" class="fixed top-5 right-5 z-50 transform translate-x-full transition-transform duration-300 flex items-center gap-3 bg-black/95 border border-amber-500/60 p-4 shadow-2xl font-mono text-xs text-white max-w-sm rounded-xl">
         <i class="fa-solid fa-circle-check text-amber-400 text-lg"></i>
         <div>
             <div id="toastTitle" class="font-bold text-amber-300 font-orbitron">SYSTEM NOTICE</div>
@@ -156,21 +132,15 @@
     <div class="relative z-10 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-1 flex flex-col gap-8">
 
         <!-- HEADER SECTION -->
-        <header
-            class="directory-card p-6 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-6 border-amber-500/30 shadow-2xl">
+        <header class="directory-card p-6 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-6 border-amber-500/30 shadow-2xl">
             <div class="flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left">
                 <div class="relative group cursor-pointer">
-                    <div
-                        class="absolute -inset-2 bg-amber-500/20 rounded-full blur-xl group-hover:bg-amber-400/40 transition duration-500">
-                    </div>
-                    <img id="headerLogoImg" src="" alt="WETYAI LOGO"
-                        class="relative h-20 sm:h-24 object-contain drop-shadow-[0_0_20px_rgba(212,175,55,0.4)] transition transform group-hover:scale-105 duration-300">
+                    <div class="absolute -inset-2 bg-amber-500/20 rounded-full blur-xl group-hover:bg-amber-400/40 transition duration-500"></div>
+                    <img id="headerLogoImg" src="" alt="WETYAI LOGO" class="relative h-20 sm:h-24 object-contain drop-shadow-[0_0_20px_rgba(212,175,55,0.4)] transition transform group-hover:scale-105 duration-300">
                 </div>
                 <div class="border-t sm:border-t-0 sm:border-l border-gray-800/80 pt-4 sm:pt-0 sm:pl-6">
                     <div class="flex items-center justify-center sm:justify-start gap-2">
-                        <span
-                            class="px-2.5 py-0.5 text-[10px] font-extrabold bg-gradient-to-r from-amber-400 to-amber-200 text-black font-orbitron tracking-widest uppercase rounded">TEMSPEED
-                            // KING OF WEAPON</span>
+                        <span class="px-2.5 py-0.5 text-[10px] font-extrabold bg-gradient-to-r from-amber-400 to-amber-200 text-black font-orbitron tracking-widest uppercase rounded">TEMSPEED // KING OF WEAPON</span>
                         <span class="text-xs text-emerald-400 font-mono flex items-center gap-1.5">
                             <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> SYSTEM ACTIVE
                         </span>
@@ -178,44 +148,35 @@
                     <h1 class="text-2xl sm:text-4xl font-black font-orbitron text-white tracking-wider mt-1.5">
                         WETYAI <span class="text-amber-400 neon-gold-text">2X26 EX</span>
                     </h1>
-                    <p class="text-xs sm:text-sm text-gray-300 font-cinzel italic tracking-widest mt-0.5">"Together We
-                        Stand Forever Wetyai"</p>
+                    <p class="text-xs sm:text-sm text-gray-300 font-cinzel italic tracking-widest mt-0.5">"Together We Stand Forever Wetyai"</p>
                 </div>
             </div>
 
             <!-- AUTH & SOCIAL LINKS PANEL -->
             <div class="flex flex-col sm:flex-row items-center gap-3 w-full md:w-auto justify-center font-kanit">
-                <a id="clanFbBtn" href="#" target="_blank"
-                    class="px-4 py-2.5 text-xs font-bold text-white bg-blue-600/30 hover:bg-blue-600 border border-blue-500/50 transition rounded-xl flex items-center gap-2 shadow-lg">
+                <a id="clanFbBtn" href="#" target="_blank" class="px-4 py-2.5 text-xs font-bold text-white bg-blue-600/30 hover:bg-blue-600 border border-blue-500/50 transition rounded-xl flex items-center gap-2 shadow-lg">
                     <i class="fa-brands fa-facebook text-lg text-blue-400 hover:text-white"></i>
                     <span>CLAN FACEBOOK</span>
                 </a>
 
                 <div id="loggedOutNav" class="flex items-center gap-2 w-full sm:w-auto">
-                    <button onclick="openAuthModal()"
-                        class="px-4 py-2.5 text-xs font-bold text-white bg-white/5 hover:bg-white hover:text-black border border-gray-700 transition rounded-xl flex items-center gap-1.5">
+                    <button onclick="openAuthModal()" class="px-4 py-2.5 text-xs font-bold text-white bg-white/5 hover:bg-white hover:text-black border border-gray-700 transition rounded-xl flex items-center gap-1.5">
                         <i class="fa-solid fa-right-to-bracket"></i>
                         <span>เข้าสู่ระบบ (ADMIN)</span>
                     </button>
                 </div>
 
-                <div id="loggedInNav"
-                    class="hidden flex items-center gap-3 bg-black/80 p-2.5 border border-amber-500/40 rounded-xl">
+                <div id="loggedInNav" class="hidden flex items-center gap-3 bg-black/80 p-2.5 border border-amber-500/40 rounded-xl">
                     <div class="text-left cursor-pointer px-2">
                         <div class="flex items-center gap-2">
-                            <span id="navCallsign"
-                                class="font-bold text-white text-sm hover:text-amber-400">CALLSIGN</span>
-                            <span id="navRoleBadge"
-                                class="px-1.5 py-0.2 text-[9px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/50 rounded">ADMIN</span>
+                            <span id="navCallsign" class="font-bold text-white text-sm hover:text-amber-400">CALLSIGN</span>
+                            <span id="navRoleBadge" class="px-1.5 py-0.2 text-[9px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/50 rounded">ADMIN</span>
                         </div>
                     </div>
-                    <button onclick="openAddMemberModal()"
-                        class="px-3 py-1.5 text-xs text-black bg-amber-400 hover:bg-amber-300 font-bold rounded-lg flex items-center gap-1.5 shadow-[0_0_10px_rgba(212,175,55,0.4)]">
+                    <button onclick="openAddMemberModal()" class="px-3 py-1.5 text-xs text-black bg-amber-400 hover:bg-amber-300 font-bold rounded-lg flex items-center gap-1.5 shadow-[0_0_10px_rgba(212,175,55,0.4)]">
                         <i class="fa-solid fa-user-plus"></i> เพิ่มสมาชิก
                     </button>
-                    <button onclick="handleLogout()"
-                        class="p-2 text-xs text-red-400 hover:text-red-200 border border-red-900/50 rounded-lg"
-                        title="ออกจากระบบ">
+                    <button onclick="handleLogout()" class="p-2 text-xs text-red-400 hover:text-red-200 border border-red-900/50 rounded-lg" title="ออกจากระบบ">
                         <i class="fa-solid fa-power-off"></i>
                     </button>
                 </div>
@@ -225,13 +186,11 @@
         <!-- STATS BAR -->
         <section class="grid grid-cols-2 md:grid-cols-2 gap-3 text-xs font-mono">
             <div class="directory-card p-4 rounded-xl flex flex-col justify-between">
-                <span class="text-gray-400 text-[11px] flex justify-between uppercase">TOTAL MEMBERS <i
-                        class="fa-solid fa-users text-amber-400/70"></i></span>
+                <span class="text-gray-400 text-[11px] flex justify-between uppercase">TOTAL MEMBERS <i class="fa-solid fa-users text-amber-400/70"></i></span>
                 <span id="statTotal" class="text-2xl font-bold font-orbitron text-white mt-1">0</span>
             </div>
             <div class="directory-card p-4 rounded-xl flex flex-col justify-between">
-                <span class="text-gray-400 text-[11px] flex justify-between uppercase">ACTIVE <i
-                        class="fa-solid fa-signal text-emerald-400"></i></span>
+                <span class="text-gray-400 text-[11px] flex justify-between uppercase">ACTIVE <i class="fa-solid fa-signal text-emerald-400"></i></span>
                 <span id="statActive" class="text-2xl font-bold font-orbitron text-emerald-400 mt-1">0</span>
             </div>
         </section>
@@ -239,22 +198,15 @@
         <!-- CATEGORY TABS & SEARCH CONTROLS -->
         <section class="directory-card p-4 rounded-xl flex flex-col lg:flex-row items-center justify-between gap-4">
             <div class="flex flex-wrap items-center gap-2 w-full lg:w-auto">
-                <button onclick="setCategory('ALL')" id="tabALL"
-                    class="category-tab active px-4 py-2 text-xs font-bold rounded-lg border border-gray-800 transition">ALL
-                    MEMBERS</button>
-                <button onclick="setCategory('Leadership')" id="tabLeadership"
-                    class="category-tab px-4 py-2 text-xs font-bold rounded-lg border border-gray-800 text-gray-400 hover:text-white transition">LEADERSHIP</button>
-                <button onclick="setCategory('Officers')" id="tabOfficers"
-                    class="category-tab px-4 py-2 text-xs font-bold rounded-lg border border-gray-800 text-gray-400 hover:text-white transition">OFFICERS</button>
-                <button onclick="setCategory('Specialists')" id="tabSpecialists"
-                    class="category-tab px-4 py-2 text-xs font-bold rounded-lg border border-gray-800 text-gray-400 hover:text-white transition">SPECIALISTS</button>
+                <button onclick="setCategory('ALL')" id="tabALL" class="category-tab active px-4 py-2 text-xs font-bold rounded-lg border border-gray-800 transition">ALL MEMBERS</button>
+                <button onclick="setCategory('Leadership')" id="tabLeadership" class="category-tab px-4 py-2 text-xs font-bold rounded-lg border border-gray-800 text-gray-400 hover:text-white transition">LEADERSHIP</button>
+                <button onclick="setCategory('Officers')" id="tabOfficers" class="category-tab px-4 py-2 text-xs font-bold rounded-lg border border-gray-800 text-gray-400 hover:text-white transition">OFFICERS</button>
+                <button onclick="setCategory('Specialists')" id="tabSpecialists" class="category-tab px-4 py-2 text-xs font-bold rounded-lg border border-gray-800 text-gray-400 hover:text-white transition">SPECIALISTS</button>
             </div>
 
             <div class="relative w-full lg:w-72">
-                <i
-                    class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 text-xs"></i>
-                <input type="text" id="searchInput" oninput="renderRoster()" placeholder="ค้นหารายชื่อสมาชิก..."
-                    class="w-full bg-black/80 border border-gray-800 rounded-lg pl-9 pr-4 py-2 text-xs text-white focus:outline-none focus:border-amber-400 transition">
+                <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 text-xs"></i>
+                <input type="text" id="searchInput" oninput="renderRoster()" placeholder="ค้นหารายชื่อสมาชิก..." class="w-full bg-black/80 border border-gray-800 rounded-lg pl-9 pr-4 py-2 text-xs text-white focus:outline-none focus:border-amber-400 transition">
             </div>
         </section>
 
@@ -264,15 +216,13 @@
         </main>
 
         <!-- FOOTER -->
-        <footer
-            class="directory-card p-6 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-400 border-gray-800/80">
+        <footer class="directory-card p-6 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-400 border-gray-800/80">
             <div class="flex items-center gap-3">
                 <img id="footerLogoImg" src="" class="h-8 object-contain opacity-80" alt="Wetyai Footer Logo">
                 <span>© 2026 WETYAI 2X26 EX. TEMSPEED KING OF WEAPON.</span>
             </div>
             <div class="flex items-center gap-4">
-                <a id="footerFbBtn" href="#" target="_blank"
-                    class="text-gray-400 hover:text-blue-400 text-lg transition" title="Clan Facebook">
+                <a id="footerFbBtn" href="#" target="_blank" class="text-gray-400 hover:text-blue-400 text-lg transition" title="Clan Facebook">
                     <i class="fa-brands fa-facebook"></i>
                 </a>
             </div>
@@ -284,11 +234,9 @@
     </div>
 
     <!-- MODAL AUTHENTICATION (ADMIN ONLY) -->
-    <div id="authModal"
-        class="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-md hidden p-4">
+    <div id="authModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-md hidden p-4">
         <div class="directory-card max-w-md w-full p-6 rounded-2xl relative border-amber-500/40 bg-black/95">
-            <button onclick="closeAuthModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white text-lg"><i
-                    class="fa-solid fa-xmark"></i></button>
+            <button onclick="closeAuthModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white text-lg"><i class="fa-solid fa-xmark"></i></button>
             <div class="text-center mb-6">
                 <i class="fa-solid fa-user-shield text-3xl text-amber-400 mb-2"></i>
                 <h3 class="font-orbitron font-bold text-white text-lg">ADMIN LOGIN</h3>
@@ -297,29 +245,21 @@
             <form id="loginForm" onsubmit="handleLoginSubmit(event)" class="space-y-4 text-xs font-kanit">
                 <div>
                     <label class="block text-gray-400 mb-1">CALLSIGN / ชื่อผู้ใช้</label>
-                    <input type="text" id="loginUsername" required placeholder="แอดมิน"
-                        class="w-full bg-black border border-gray-800 rounded-lg p-2.5 text-white focus:border-amber-400 outline-none">
+                    <input type="text" id="loginUsername" required placeholder="แอดมิน" class="w-full bg-black border border-gray-800 rounded-lg p-2.5 text-white focus:border-amber-400 outline-none">
                 </div>
                 <div>
                     <label class="block text-gray-400 mb-1">PASSWORD / รหัสผ่าน</label>
-                    <input type="password" id="loginPassword" required placeholder="••••••••"
-                        class="w-full bg-black border border-gray-800 rounded-lg p-2.5 text-white focus:border-amber-400 outline-none">
+                    <input type="password" id="loginPassword" required placeholder="••••••••" class="w-full bg-black border border-gray-800 rounded-lg p-2.5 text-white focus:border-amber-400 outline-none">
                 </div>
-                <button type="submit"
-                    class="w-full py-2.5 text-xs text-black bg-amber-400 hover:bg-amber-300 font-bold rounded-lg uppercase font-orbitron">LOG
-                    IN</button>
+                <button type="submit" class="w-full py-2.5 text-xs text-black bg-amber-400 hover:bg-amber-300 font-bold rounded-lg uppercase font-orbitron">LOG IN</button>
             </form>
         </div>
     </div>
 
     <!-- MODAL ADD / EDIT MEMBER (ADMIN ONLY) -->
-    <div id="addMemberModal"
-        class="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-md hidden p-4">
-        <div
-            class="directory-card max-w-md w-full p-6 rounded-2xl relative border-amber-500/50 bg-black/95 max-h-[90vh] overflow-y-auto">
-            <button onclick="closeAddMemberModal()"
-                class="absolute top-4 right-4 text-gray-400 hover:text-white text-lg"><i
-                    class="fa-solid fa-xmark"></i></button>
+    <div id="addMemberModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-md hidden p-4">
+        <div class="directory-card max-w-md w-full p-6 rounded-2xl relative border-amber-500/50 bg-black/95 max-h-[90vh] overflow-y-auto">
+            <button onclick="closeAddMemberModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white text-lg"><i class="fa-solid fa-xmark"></i></button>
             <div class="text-center mb-5">
                 <i id="memberFormIcon" class="fa-solid fa-user-plus text-3xl text-amber-400 mb-2"></i>
                 <h3 id="memberFormTitle" class="font-orbitron font-bold text-white text-lg">ADD NEW MEMBER</h3>
@@ -329,29 +269,24 @@
                 <input type="hidden" id="editMemberId" value="">
                 <div>
                     <label class="block text-gray-400 mb-1">ชื่อสมาชิก / CALLSIGN *</label>
-                    <input type="text" id="addName" required placeholder="เช่น สมชาย สายลุย"
-                        class="w-full bg-black border border-gray-800 rounded-lg p-2.5 text-white focus:border-amber-400 outline-none">
+                    <input type="text" id="addName" required placeholder="เช่น สมชาย สายลุย" class="w-full bg-black border border-gray-800 rounded-lg p-2.5 text-white focus:border-amber-400 outline-none">
                 </div>
                 <div>
                     <label class="block text-gray-400 mb-1">FACEBOOK PROFILE LINK *</label>
-                    <input type="url" id="addFacebook" required placeholder="https://www.facebook.com/..."
-                        class="w-full bg-black border border-gray-800 rounded-lg p-2.5 text-white focus:border-amber-400 outline-none">
+                    <input type="url" id="addFacebook" required placeholder="https://www.facebook.com/..." class="w-full bg-black border border-gray-800 rounded-lg p-2.5 text-white focus:border-amber-400 outline-none">
                 </div>
                 <div>
                     <label class="block text-gray-400 mb-1">FACEBOOK VIDEO LINK (คลิปไฮไลท์เฟสบุ๊ค)</label>
-                    <input type="url" id="addFbVideo" placeholder="https://www.facebook.com/watch/..."
-                        class="w-full bg-black border border-gray-800 rounded-lg p-2.5 text-white focus:border-amber-400 outline-none">
+                    <input type="url" id="addFbVideo" placeholder="https://www.facebook.com/watch/..." class="w-full bg-black border border-gray-800 rounded-lg p-2.5 text-white focus:border-amber-400 outline-none">
                 </div>
                 <div>
                     <label class="block text-gray-400 mb-1">YOUTUBE VIDEO LINK (คลิปไฮไลท์ยูทูป)</label>
-                    <input type="url" id="addYoutube" placeholder="https://www.youtube.com/watch?v=..."
-                        class="w-full bg-black border border-gray-800 rounded-lg p-2.5 text-white focus:border-amber-400 outline-none">
+                    <input type="url" id="addYoutube" placeholder="https://www.youtube.com/watch?v=..." class="w-full bg-black border border-gray-800 rounded-lg p-2.5 text-white focus:border-amber-400 outline-none">
                 </div>
                 <div class="grid grid-cols-2 gap-2">
                     <div>
                         <label class="block text-gray-400 mb-1">RANK / ยศ *</label>
-                        <select id="addRank"
-                            class="w-full bg-black border border-gray-800 rounded-lg p-2 text-white focus:border-amber-400 outline-none">
+                        <select id="addRank" class="w-full bg-black border border-gray-800 rounded-lg p-2 text-white focus:border-amber-400 outline-none">
                             <option value="OFFICIAL MEMBER">OFFICIAL MEMBER</option>
                             <option value="KING">KING</option>
                             <option value="LEADER">LEADER</option>
@@ -359,8 +294,7 @@
                     </div>
                     <div>
                         <label class="block text-gray-400 mb-1">หมวดหมู่ *</label>
-                        <select id="addCategory"
-                            class="w-full bg-black border border-gray-800 rounded-lg p-2 text-white focus:border-amber-400 outline-none">
+                        <select id="addCategory" class="w-full bg-black border border-gray-800 rounded-lg p-2 text-white focus:border-amber-400 outline-none">
                             <option value="ALL">ทั่วไป (ALL)</option>
                             <option value="Leadership">Leadership</option>
                             <option value="Officers">Officers</option>
@@ -369,20 +303,15 @@
                     </div>
                 </div>
 
-                <button type="submit" id="memberFormBtn"
-                    class="w-full py-2.5 text-xs text-black bg-amber-400 hover:bg-amber-300 font-bold rounded-lg uppercase font-orbitron mt-3">บันทึกข้อมูลสมาชิก</button>
+                <button type="submit" id="memberFormBtn" class="w-full py-2.5 text-xs text-black bg-amber-400 hover:bg-amber-300 font-bold rounded-lg uppercase font-orbitron mt-3">บันทึกข้อมูลสมาชิก</button>
             </form>
         </div>
     </div>
 
     <!-- MODAL DOSSIER DETAILS -->
-    <div id="detailModal"
-        class="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-md hidden p-4">
-        <div
-            class="directory-card max-w-lg w-full p-6 rounded-2xl relative border-amber-500/50 bg-black/95 max-h-[90vh] overflow-y-auto">
-            <button onclick="closeDetailModal()"
-                class="absolute top-4 right-4 text-gray-400 hover:text-white text-lg"><i
-                    class="fa-solid fa-xmark"></i></button>
+    <div id="detailModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-md hidden p-4">
+        <div class="directory-card max-w-lg w-full p-6 rounded-2xl relative border-amber-500/50 bg-black/95 max-h-[90vh] overflow-y-auto">
+            <button onclick="closeDetailModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white text-lg"><i class="fa-solid fa-xmark"></i></button>
             <div id="modalContent"></div>
         </div>
     </div>
